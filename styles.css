@@ -53,3 +53,41 @@ body {
 .frontFace {
     transform: rotateY(180deg);
 }
+
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.newGame {
+    padding: 5px;
+    height: auto;
+    width: auto;
+    border-radius: 12px;
+    perspective: 1000px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+    background: #F1FAEE;
+    color: #1D3557;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.newGame:hover {
+    padding: 5px;
+    height: auto;
+    width: auto;
+    border-radius: 12px;
+    perspective: 1000px;
+    background-color: #A8DADC;
+    border: 1px #457B9D solid;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+    justify-content: center;
+    margin-bottom: 100px;
+}
+

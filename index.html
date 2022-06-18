@@ -8,17 +8,18 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <header class="gameHeader">
-      <h1 class="introHead">Memory Game</h1> 
-      <br>
-      <div class="timer">
-        <span id="minute">00</span>:<span id="second">00</span>:<span id="millisecond">000</span>
-      </div>  
-    </header>
-
-    <button type="button" name="starttimer" onclick="startTimer()">start</button>
-    
-
+    <!-- <section class="headArea">
+        <div class="outer">
+            <h1 class="inner introHead">Memory Game</h1>  
+        
+            <div class="inner timer">
+                <span id="minute">00</span>:<span id="second">00</span>:<span id="millisecond">000</span>
+            </div> 
+            <div class="startDiv inner">
+                <button aria-label="start-game" id="startButton" class="inner startButton" onclick="startTimer()">Start Game</button>  
+            </div>
+        </div>
+    </section> -->
     <section class="memoryGame">
 
         <div class="memoryCard" data-framework="react">
@@ -78,11 +79,11 @@
         </div>
          
     </section>
-
-    <footer class="footer">
-        <button class="newGame" onclick="newGame()">Play Again!</button>   
-    </footer>
-
+    <section class="footer">
+        <div class="footer">
+            <button class="newGame" onclick="newGame()">Play Again!</button>   
+        </div>
+    </section>
 
     <script src="./scripts.js"></script>
 </body>

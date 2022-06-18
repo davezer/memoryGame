@@ -4,19 +4,20 @@ let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 
-"use strict";
 
-let minute = 0;
-let second = 0;
-let millisecond = 0;
+// "use strict";
 
-let cron;
+// let minute = 0;
+// let second = 0;
+// let millisecond = 0;
+
+// let cron;
 
 
-function startTimer() {
-    // pause();
-    cron = setInterval(() => { timer(); }, 10);
-  }
+// function startTimer() {
+//     // pause();
+//     cron = setInterval(() => { timer(); }, 10);
+//   }
   
 
 function flipCard() {

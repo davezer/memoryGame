@@ -4,6 +4,21 @@ let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 
+"use strict";
+
+let minute = 0;
+let second = 0;
+let millisecond = 0;
+
+let cron;
+
+
+function startTimer() {
+    // pause();
+    cron = setInterval(() => { timer(); }, 10);
+  }
+  
+
 function flipCard() {
     if (lockBoard) return;
     if (this === firstCard) return;
@@ -40,21 +55,41 @@ setTimeout(() => {
     secondCard.classList.remove('flip');
 
     resetBoard();
-}, 1500);
+}, 1000);
 }
 
 function resetBoard() {
     [hasFlippedCard, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
+
+    
 }
 
 function newGame() {
     document.querySelector('.newGame').addEventListener('click', resetBoard);
-    window.location.reload();
+    document.location.reload();
     
 
 }
 
+function timer() {
+    if ((millisecond += 10) == 1000) {
+      millisecond = 0;
+      second++;
+    }
+    if (second == 60) {
+      second = 0;
+      minute++;
+    }
+
+    document.getElementById('minute').innerText = returnData(minute);
+    document.getElementById('second').innerText = returnData(second);
+    document.getElementById('millisecond').innerText = returnData(millisecond);
+  }
+  
+  function returnData(input) {
+    return input > 10 ? input : `0${input}`
+}  
 
 (function shuffle() {
 cards.forEach(card => {

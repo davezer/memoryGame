@@ -10,6 +10,22 @@ body {
     background: #1D3557;
 }
 
+.gameHeader {
+    
+    width: 100%;
+    position: absolute;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.introHead {
+    font-size: 35px;
+    color:#F1FAEE;
+}
+
+
 .memoryGame {
     width: 640px;
     height: 640px;

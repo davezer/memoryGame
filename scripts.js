@@ -99,4 +99,6 @@ cards.forEach(card => {
 });
 })();
 
+// adding comment for new commit
+
 cards.forEach(card => card.addEventListener('click', flipCard));
